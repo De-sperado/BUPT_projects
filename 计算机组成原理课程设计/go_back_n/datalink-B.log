@@ -1,0 +1,488 @@
+000.000 =============================================================
+000.000                     Station B                               
+000.000 -------------------------------------------------------------
+000.000 Protocol.lib, version 4.0, jiangyanjun0718@bupt.edu.cn
+000.000 Channel: 8000 bps, 270 ms propagation delay, bit error rate 0
+000.000 Log file "./datalink-B.log", TCP port 59144, debug mask 0x07
+000.000 Station B is connecting station A (TCP port 59144) ... Done.
+000.472 New epoch: Mon May  6 00:00:09 2019
+000.472 =================================================================
+000.472 
+000.472 Designed by Jiang Yanjun, build: May  6 2019  00:00:06
+000.472 nbuffered=0next
+000.472 Send DATA 0 6, ID 20000
+000.472 nbuffered=1wait window
+000.721 nbuffered=1next
+000.721 Send DATA 1 6, ID 20001
+000.721 nbuffered=2wait window
+000.988 nbuffered=2next
+000.988 Send DATA 2 6, ID 20002
+000.988 nbuffered=3wait window
+001.023 ack_expected=0, f.ack=6, frame_nr=3
+001.023 Recv DATA 0 6, ID 10000
+001.023 nbuffered=3wait window
+001.242 nbuffered=3next
+001.242 Send DATA 3 0, ID 20003
+001.242 nbuffered=4wait window
+001.292 ack_expected=0, f.ack=6, frame_nr=4
+001.292 Recv DATA 1 6, ID 10001
+001.292 nbuffered=4wait window
+001.509 nbuffered=4next
+001.509 Send DATA 4 1, ID 20004
+001.509 nbuffered=5wait window
+001.541 ack_expected=0, f.ack=6, frame_nr=5
+001.541 Recv DATA 2 6, ID 10002
+001.541 nbuffered=5wait window
+001.784 nbuffered=5next
+001.784 Send DATA 5 2, ID 20005
+001.784 nbuffered=6wait window
+001.815 ack_expected=0, f.ack=0, frame_nr=6
+001.815 Recv DATA 3 0, ID 10003
+001.815 nbuffered=5wait window
+002.043 nbuffered=5next
+002.043 Send DATA 6 3, ID 20006
+002.043 nbuffered=6wait window
+002.094 ack_expected=1, f.ack=1, frame_nr=0
+002.094 Recv DATA 4 1, ID 10004
+002.094 nbuffered=5wait window
+002.298 nbuffered=5next
+002.298 Send DATA 0 4, ID 20007
+002.298 nbuffered=6wait window
+002.345 ack_expected=2, f.ack=2, frame_nr=1
+002.345 Recv DATA 5 2, ID 10005
+002.345 nbuffered=5wait window
+002.573 nbuffered=5next
+002.573 Send DATA 1 5, ID 20008
+002.573 nbuffered=6wait window
+002.608 ack_expected=3, f.ack=3, frame_nr=2
+002.608 Recv DATA 6 3, ID 10006
+002.608 nbuffered=5wait window
+002.831 nbuffered=5next
+002.831 Send DATA 2 6, ID 20009
+002.831 nbuffered=6wait window
+002.883 ack_expected=4, f.ack=4, frame_nr=3
+002.883 Recv DATA 0 4, ID 10007
+002.883 .... 8 packets received, 7645 bps, 95.57%, Err 0 (0.0e+00)
+002.883 nbuffered=5wait window
+003.089 nbuffered=5next
+003.089 Send DATA 3 0, ID 20010
+003.089 nbuffered=6wait window
+003.138 ack_expected=5, f.ack=5, frame_nr=4
+003.138 Recv DATA 1 5, ID 10008
+003.138 nbuffered=5wait window
+003.355 nbuffered=5next
+003.355 Send DATA 4 1, ID 20011
+003.355 nbuffered=6wait window
+003.390 ack_expected=6, f.ack=6, frame_nr=5
+003.390 Recv DATA 2 6, ID 10009
+003.390 nbuffered=5wait window
+003.627 nbuffered=5next
+003.627 Send DATA 5 2, ID 20012
+003.627 nbuffered=6wait window
+003.659 ack_expected=0, f.ack=0, frame_nr=6
+003.659 Recv DATA 3 0, ID 10010
+003.659 nbuffered=5wait window
+003.886 nbuffered=5next
+003.886 Send DATA 6 3, ID 20013
+003.886 nbuffered=6wait window
+003.934 ack_expected=1, f.ack=1, frame_nr=0
+003.934 Recv DATA 4 1, ID 10011
+003.934 nbuffered=5wait window
+004.150 nbuffered=5next
+004.150 Send DATA 0 4, ID 20014
+004.150 nbuffered=6wait window
+004.185 ack_expected=2, f.ack=2, frame_nr=1
+004.185 Recv DATA 5 2, ID 10012
+004.185 nbuffered=5wait window
+004.419 nbuffered=5next
+004.419 Send DATA 1 5, ID 20015
+004.419 nbuffered=6wait window
+004.453 ack_expected=3, f.ack=3, frame_nr=2
+004.453 Recv DATA 6 3, ID 10013
+004.453 nbuffered=5wait window
+004.676 nbuffered=5next
+004.676 Send DATA 2 6, ID 20016
+004.676 nbuffered=6wait window
+004.729 ack_expected=4, f.ack=4, frame_nr=3
+004.729 Recv DATA 0 4, ID 10014
+004.729 nbuffered=5wait window
+004.938 nbuffered=5next
+004.938 Send DATA 3 0, ID 20017
+004.938 nbuffered=6wait window
+004.990 ack_expected=5, f.ack=5, frame_nr=4
+004.990 Recv DATA 1 5, ID 10015
+004.990 .... 16 packets received, 7710 bps, 96.38%, Err 0 (0.0e+00)
+004.990 nbuffered=5wait window
+005.204 nbuffered=5next
+005.204 Send DATA 4 1, ID 20018
+005.204 nbuffered=6wait window
+005.238 ack_expected=6, f.ack=6, frame_nr=5
+005.238 Recv DATA 2 6, ID 10016
+005.238 nbuffered=5wait window
+005.476 nbuffered=5next
+005.476 Send DATA 5 2, ID 20019
+005.476 nbuffered=6wait window
+005.510 ack_expected=0, f.ack=0, frame_nr=6
+005.511 Recv DATA 3 0, ID 10017
+005.511 nbuffered=5wait window
+005.728 nbuffered=5next
+005.728 Send DATA 6 3, ID 20020
+005.728 nbuffered=6wait window
+005.777 ack_expected=1, f.ack=1, frame_nr=0
+005.777 Recv DATA 4 1, ID 10018
+005.777 nbuffered=5wait window
+006.004 nbuffered=5next
+006.004 Send DATA 0 4, ID 20021
+006.004 nbuffered=6wait window
+006.056 ack_expected=2, f.ack=2, frame_nr=1
+006.056 Recv DATA 5 2, ID 10019
+006.056 nbuffered=5wait window
+006.269 nbuffered=5next
+006.269 Send DATA 1 5, ID 20022
+006.269 nbuffered=6wait window
+006.302 ack_expected=3, f.ack=3, frame_nr=2
+006.302 Recv DATA 6 3, ID 10020
+006.302 nbuffered=5wait window
+006.534 nbuffered=5next
+006.534 Send DATA 2 6, ID 20023
+006.534 nbuffered=6wait window
+006.551 ack_expected=4, f.ack=4, frame_nr=3
+006.551 Recv DATA 0 4, ID 10021
+006.551 nbuffered=5wait window
+006.785 nbuffered=5next
+006.785 Send DATA 3 0, ID 20024
+006.786 nbuffered=6wait window
+006.819 ack_expected=5, f.ack=5, frame_nr=4
+006.819 Recv DATA 1 5, ID 10022
+006.820 nbuffered=5wait window
+007.053 nbuffered=5next
+007.053 Send DATA 4 1, ID 20025
+007.053 nbuffered=6wait window
+007.089 ack_expected=6, f.ack=6, frame_nr=5
+007.089 Recv DATA 2 6, ID 10023
+007.089 .... 24 packets received, 7742 bps, 96.77%, Err 0 (0.0e+00)
+007.089 nbuffered=5wait window
+007.320 nbuffered=5next
+007.320 Send DATA 5 2, ID 20026
+007.320 nbuffered=6wait window
+007.354 ack_expected=0, f.ack=0, frame_nr=6
+007.355 Recv DATA 3 0, ID 10024
+007.355 nbuffered=5wait window
+007.591 nbuffered=5next
+007.591 Send DATA 6 3, ID 20027
+007.591 nbuffered=6wait window
+007.626 ack_expected=1, f.ack=1, frame_nr=0
+007.626 Recv DATA 4 1, ID 10025
+007.626 nbuffered=5wait window
+007.853 nbuffered=5next
+007.853 Send DATA 0 4, ID 20028
+007.853 nbuffered=6wait window
+007.869 ack_expected=2, f.ack=2, frame_nr=1
+007.869 Recv DATA 5 2, ID 10026
+007.869 nbuffered=5wait window
+008.109 nbuffered=5next
+008.109 Send DATA 1 5, ID 20029
+008.109 nbuffered=6wait window
+008.144 ack_expected=3, f.ack=3, frame_nr=2
+008.144 Recv DATA 6 3, ID 10027
+008.144 nbuffered=5wait window
+008.376 nbuffered=5next
+008.376 Send DATA 2 6, ID 20030
+008.376 nbuffered=6wait window
+008.410 ack_expected=4, f.ack=4, frame_nr=3
+008.410 Recv DATA 0 4, ID 10028
+008.410 nbuffered=5wait window
+008.634 nbuffered=5next
+008.634 Send DATA 3 0, ID 20031
+008.634 nbuffered=6wait window
+008.703 ack_expected=5, f.ack=5, frame_nr=4
+008.703 Recv DATA 1 5, ID 10029
+008.703 nbuffered=5wait window
+008.910 nbuffered=5next
+008.910 Send DATA 4 1, ID 20032
+008.910 nbuffered=6wait window
+008.963 ack_expected=6, f.ack=6, frame_nr=5
+008.963 Recv DATA 2 6, ID 10030
+008.963 nbuffered=5wait window
+009.162 nbuffered=5next
+009.162 Send DATA 5 2, ID 20033
+009.162 nbuffered=6wait window
+009.216 ack_expected=0, f.ack=0, frame_nr=6
+009.216 Recv DATA 3 0, ID 10031
+009.216 .... 32 packets received, 7732 bps, 96.65%, Err 0 (0.0e+00)
+009.216 nbuffered=5wait window
+009.436 nbuffered=5next
+009.436 Send DATA 6 3, ID 20034
+009.436 nbuffered=6wait window
+009.473 ack_expected=1, f.ack=1, frame_nr=0
+009.473 Recv DATA 4 1, ID 10032
+009.473 nbuffered=5wait window
+009.705 nbuffered=5next
+009.705 Send DATA 0 4, ID 20035
+009.705 nbuffered=6wait window
+009.738 ack_expected=2, f.ack=2, frame_nr=1
+009.738 Recv DATA 5 2, ID 10033
+009.738 nbuffered=5wait window
+009.958 nbuffered=5next
+009.958 Send DATA 1 5, ID 20036
+009.958 nbuffered=6wait window
+010.012 ack_expected=3, f.ack=3, frame_nr=2
+010.012 Recv DATA 6 3, ID 10034
+010.012 nbuffered=5wait window
+010.227 nbuffered=5next
+010.227 Send DATA 2 6, ID 20037
+010.227 nbuffered=6wait window
+010.259 ack_expected=4, f.ack=4, frame_nr=3
+010.259 Recv DATA 0 4, ID 10035
+010.259 nbuffered=5wait window
+010.493 nbuffered=5next
+010.493 Send DATA 3 0, ID 20038
+010.493 nbuffered=6wait window
+010.527 ack_expected=5, f.ack=5, frame_nr=4
+010.527 Recv DATA 1 5, ID 10036
+010.527 nbuffered=5wait window
+010.747 nbuffered=5next
+010.747 Send DATA 4 1, ID 20039
+010.747 nbuffered=6wait window
+010.781 ack_expected=6, f.ack=6, frame_nr=5
+010.781 Recv DATA 2 6, ID 10037
+010.781 nbuffered=5wait window
+011.018 nbuffered=5next
+011.018 Send DATA 5 2, ID 20040
+011.018 nbuffered=6wait window
+011.072 ack_expected=0, f.ack=0, frame_nr=6
+011.073 Recv DATA 3 0, ID 10038
+011.073 nbuffered=5wait window
+011.275 nbuffered=5next
+011.275 Send DATA 6 3, ID 20041
+011.275 nbuffered=6wait window
+011.326 ack_expected=1, f.ack=1, frame_nr=0
+011.327 Recv DATA 4 1, ID 10039
+011.327 .... 40 packets received, 7739 bps, 96.73%, Err 0 (0.0e+00)
+011.327 nbuffered=5wait window
+011.548 nbuffered=5next
+011.548 Send DATA 0 4, ID 20042
+011.548 nbuffered=6wait window
+011.599 ack_expected=2, f.ack=2, frame_nr=1
+011.599 Recv DATA 5 2, ID 10040
+011.599 nbuffered=5wait window
+011.805 nbuffered=5next
+011.805 Send DATA 1 5, ID 20043
+011.805 nbuffered=6wait window
+011.858 ack_expected=3, f.ack=3, frame_nr=2
+011.858 Recv DATA 6 3, ID 10041
+011.859 nbuffered=5wait window
+012.078 nbuffered=5next
+012.078 Send DATA 2 6, ID 20044
+012.078 nbuffered=6wait window
+012.112 ack_expected=4, f.ack=4, frame_nr=3
+012.113 Recv DATA 0 4, ID 10042
+012.113 nbuffered=5wait window
+012.330 nbuffered=5next
+012.330 Send DATA 3 0, ID 20045
+012.330 nbuffered=6wait window
+012.380 ack_expected=5, f.ack=5, frame_nr=4
+012.380 Recv DATA 1 5, ID 10043
+012.380 nbuffered=5wait window
+012.601 nbuffered=5next
+012.601 Send DATA 4 1, ID 20046
+012.601 nbuffered=6wait window
+012.635 ack_expected=6, f.ack=6, frame_nr=5
+012.635 Recv DATA 2 6, ID 10044
+012.635 nbuffered=5wait window
+012.865 nbuffered=5next
+012.865 Send DATA 5 2, ID 20047
+012.865 nbuffered=6wait window
+012.900 ack_expected=0, f.ack=0, frame_nr=6
+012.900 Recv DATA 3 0, ID 10045
+012.900 nbuffered=5wait window
+013.137 nbuffered=5next
+013.137 Send DATA 6 3, ID 20048
+013.137 nbuffered=6wait window
+013.173 ack_expected=1, f.ack=1, frame_nr=0
+013.173 Recv DATA 4 1, ID 10046
+013.173 nbuffered=5wait window
+013.392 nbuffered=5next
+013.392 Send DATA 0 4, ID 20049
+013.392 nbuffered=6wait window
+013.442 ack_expected=2, f.ack=2, frame_nr=1
+013.442 Recv DATA 5 2, ID 10047
+013.442 .... 48 packets received, 7739 bps, 96.74%, Err 0 (0.0e+00)
+013.442 nbuffered=5wait window
+013.661 nbuffered=5next
+013.661 Send DATA 1 5, ID 20050
+013.661 nbuffered=6wait window
+013.696 ack_expected=3, f.ack=3, frame_nr=2
+013.696 Recv DATA 6 3, ID 10048
+013.696 nbuffered=5wait window
+013.927 nbuffered=5next
+013.927 Send DATA 2 6, ID 20051
+013.927 nbuffered=6wait window
+013.961 ack_expected=4, f.ack=4, frame_nr=3
+013.961 Recv DATA 0 4, ID 10049
+013.961 nbuffered=5wait window
+014.176 nbuffered=5next
+014.176 Send DATA 3 0, ID 20052
+014.176 nbuffered=6wait window
+014.211 ack_expected=5, f.ack=5, frame_nr=4
+014.211 Recv DATA 1 5, ID 10050
+014.211 nbuffered=5wait window
+014.445 nbuffered=5next
+014.445 Send DATA 4 1, ID 20053
+014.445 nbuffered=6wait window
+014.477 ack_expected=6, f.ack=6, frame_nr=5
+014.477 Recv DATA 2 6, ID 10051
+014.477 nbuffered=5wait window
+014.718 nbuffered=5next
+014.718 Send DATA 5 2, ID 20054
+014.718 nbuffered=6wait window
+014.753 ack_expected=0, f.ack=0, frame_nr=6
+014.753 Recv DATA 3 0, ID 10052
+014.753 nbuffered=5wait window
+014.972 nbuffered=5next
+014.972 Send DATA 6 3, ID 20055
+014.972 nbuffered=6wait window
+015.027 ack_expected=1, f.ack=1, frame_nr=0
+015.027 Recv DATA 4 1, ID 10053
+015.027 nbuffered=5wait window
+015.244 nbuffered=5next
+015.244 Send DATA 0 4, ID 20056
+015.244 nbuffered=6wait window
+015.279 ack_expected=2, f.ack=2, frame_nr=1
+015.279 Recv DATA 5 2, ID 10054
+015.279 nbuffered=5wait window
+015.510 nbuffered=5next
+015.510 Send DATA 1 5, ID 20057
+015.510 nbuffered=6wait window
+015.545 ack_expected=3, f.ack=3, frame_nr=2
+015.545 Recv DATA 6 3, ID 10055
+015.545 .... 56 packets received, 7747 bps, 96.83%, Err 0 (0.0e+00)
+015.545 nbuffered=5wait window
+015.773 nbuffered=5next
+015.773 Send DATA 2 6, ID 20058
+015.773 nbuffered=6wait window
+015.808 ack_expected=4, f.ack=4, frame_nr=3
+015.808 Recv DATA 0 4, ID 10056
+015.808 nbuffered=5wait window
+016.027 nbuffered=5next
+016.027 Send DATA 3 0, ID 20059
+016.027 nbuffered=6wait window
+016.062 ack_expected=5, f.ack=5, frame_nr=4
+016.062 Recv DATA 1 5, ID 10057
+016.062 nbuffered=5wait window
+016.299 nbuffered=5next
+016.299 Send DATA 4 1, ID 20060
+016.299 nbuffered=6wait window
+016.336 ack_expected=6, f.ack=6, frame_nr=5
+016.336 Recv DATA 2 6, ID 10058
+016.336 nbuffered=5wait window
+016.555 nbuffered=5next
+016.555 Send DATA 5 2, ID 20061
+016.555 nbuffered=6wait window
+016.608 ack_expected=0, f.ack=0, frame_nr=6
+016.608 Recv DATA 3 0, ID 10059
+016.608 nbuffered=5wait window
+016.826 nbuffered=5next
+016.826 Send DATA 6 3, ID 20062
+016.826 nbuffered=6wait window
+016.861 ack_expected=1, f.ack=1, frame_nr=0
+016.861 Recv DATA 4 1, ID 10060
+016.861 nbuffered=5wait window
+017.094 nbuffered=5next
+017.094 Send DATA 0 4, ID 20063
+017.094 nbuffered=6wait window
+017.129 ack_expected=2, f.ack=2, frame_nr=1
+017.129 Recv DATA 5 2, ID 10061
+017.129 nbuffered=5wait window
+017.349 nbuffered=5next
+017.349 Send DATA 1 5, ID 20064
+017.349 nbuffered=6wait window
+017.396 ack_expected=3, f.ack=3, frame_nr=2
+017.396 Recv DATA 6 3, ID 10062
+017.396 nbuffered=5wait window
+017.610 nbuffered=5next
+017.610 Send DATA 2 6, ID 20065
+017.610 nbuffered=6wait window
+017.659 ack_expected=4, f.ack=4, frame_nr=3
+017.659 Recv DATA 0 4, ID 10063
+017.659 .... 64 packets received, 7747 bps, 96.84%, Err 0 (0.0e+00)
+017.659 nbuffered=5wait window
+017.882 nbuffered=5next
+017.882 Send DATA 3 0, ID 20066
+017.882 nbuffered=6wait window
+017.917 ack_expected=5, f.ack=5, frame_nr=4
+017.917 Recv DATA 1 5, ID 10064
+017.917 nbuffered=5wait window
+018.136 nbuffered=5next
+018.136 Send DATA 4 1, ID 20067
+018.136 nbuffered=6wait window
+018.190 ack_expected=6, f.ack=6, frame_nr=5
+018.190 Recv DATA 2 6, ID 10065
+018.190 nbuffered=5wait window
+018.405 nbuffered=5next
+018.405 Send DATA 5 2, ID 20068
+018.405 nbuffered=6wait window
+018.440 ack_expected=0, f.ack=0, frame_nr=6
+018.441 Recv DATA 3 0, ID 10066
+018.441 nbuffered=5wait window
+018.677 nbuffered=5next
+018.677 Send DATA 6 3, ID 20069
+018.677 nbuffered=6wait window
+018.712 ack_expected=1, f.ack=1, frame_nr=0
+018.712 Recv DATA 4 1, ID 10067
+018.712 nbuffered=5wait window
+018.937 nbuffered=5next
+018.937 Send DATA 0 4, ID 20070
+018.937 nbuffered=6wait window
+018.986 ack_expected=2, f.ack=2, frame_nr=1
+018.986 Recv DATA 5 2, ID 10068
+018.986 nbuffered=5wait window
+019.206 nbuffered=5next
+019.206 Send DATA 1 5, ID 20071
+019.206 nbuffered=6wait window
+019.240 ack_expected=3, f.ack=3, frame_nr=2
+019.240 Recv DATA 6 3, ID 10069
+019.240 nbuffered=5wait window
+019.461 nbuffered=5next
+019.461 Send DATA 2 6, ID 20072
+019.461 nbuffered=6wait window
+019.512 ack_expected=4, f.ack=4, frame_nr=3
+019.512 Recv DATA 0 4, ID 10070
+019.512 nbuffered=5wait window
+019.732 nbuffered=5next
+019.732 Send DATA 3 0, ID 20073
+019.732 nbuffered=6wait window
+019.784 ack_expected=5, f.ack=5, frame_nr=4
+019.784 Recv DATA 1 5, ID 10071
+019.784 .... 72 packets received, 7743 bps, 96.79%, Err 0 (0.0e+00)
+019.784 nbuffered=5wait window
+019.993 nbuffered=5next
+019.994 Send DATA 4 1, ID 20074
+019.994 nbuffered=6wait window
+020.028 ack_expected=6, f.ack=6, frame_nr=5
+020.028 Recv DATA 2 6, ID 10072
+020.028 nbuffered=5wait window
+020.255 nbuffered=5next
+020.255 Send DATA 5 2, ID 20075
+020.255 nbuffered=6wait window
+020.290 ack_expected=0, f.ack=0, frame_nr=6
+020.290 Recv DATA 3 0, ID 10073
+020.290 nbuffered=5wait window
+020.521 nbuffered=5next
+020.522 Send DATA 6 3, ID 20076
+020.522 nbuffered=6wait window
+020.555 ack_expected=1, f.ack=1, frame_nr=0
+020.555 Recv DATA 4 1, ID 10074
+020.555 nbuffered=5wait window
+020.778 nbuffered=5next
+020.778 Send DATA 0 4, ID 20077
+020.778 nbuffered=6wait window
+020.828 ack_expected=2, f.ack=2, frame_nr=1
+020.828 Recv DATA 5 2, ID 10075
+020.828 nbuffered=5wait window
+021.047 nbuffered=5next
+021.047 Send DATA 1 5, ID 20078
+021.047 nbuffered=6wait window
+021.099 ack_expected=3, f.ack=3, frame_nr=2
+021.099 Recv DATA 6 3, ID 10076
+021.100 nbuffered=5wai

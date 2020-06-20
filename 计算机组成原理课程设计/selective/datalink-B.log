@@ -1,0 +1,163 @@
+000.000 =============================================================
+000.000                     Station B                               
+000.000 -------------------------------------------------------------
+000.000 Protocol.lib, version 4.0, jiangyanjun0718@bupt.edu.cn
+000.000 Channel: 8000 bps, 270 ms propagation delay, bit error rate 1.0E-05
+000.000 Log file "./datalink-B.log", TCP port 59144, debug mask 0x07
+000.000 Station B is connecting station A (TCP port 59144) ... Done.
+000.393 New epoch: Tue Apr 30 09:29:05 2019
+000.393 =================================================================
+000.393 
+000.393 Designed by 6v, build: Apr 30 2019  09:00:48
+000.929 Recv DATA 0 8,ID 10000
+001.052 Send DATA 0 0,ID 20000
+001.218 Recv DATA 1 8,ID 10001
+001.281 Send DATA 1 1,ID 20001
+001.469 Recv DATA 2 8,ID 10002
+001.551 Send DATA 2 2,ID 20002
+001.737 Recv DATA 3 8,ID 10003
+001.802 Send DATA 3 3,ID 20003
+002.000 Recv DATA 4 8,ID 10004
+002.068 Send DATA 4 4,ID 20004
+002.255 Recv DATA 5 0,ID 10005
+002.338 Send DATA 5 5,ID 20005
+002.520 Recv DATA 6 1,ID 10006
+002.601 Send DATA 6 6,ID 20006
+002.782 Recv DATA 7 2,ID 10007
+002.782 .... 8 packets received, 7794 bps, 97.43%, Err 0 (0.0e+00)
+002.869 Send DATA 7 7,ID 20007
+003.060 Recv DATA 8 3,ID 10008
+003.129 Send DATA 8 8,ID 20008
+003.312 Send NAK 8
+003.397 Send DATA 9 8,ID 20009
+003.660 Send DATA 10 8,ID 20010
+003.925 Send DATA 11 8,ID 20011
+004.194 Send DATA 12 8,ID 20012
+004.466 Send DATA 13 8,ID 20013
+004.726 Send DATA 14 8,ID 20014
+004.979 Send DATA 15 8,ID 20015
+005.256 Send DATA 16 8,ID 20016
+005.515 Send DATA 17 8,ID 20017
+005.778 Send DATA 18 8,ID 20018
+006.040 Send DATA 19 8,ID 20019
+006.305 Send DATA 20 8,ID 20020
+006.578 Send DATA 21 8,ID 20021
+006.828 Send DATA 22 8,ID 20022
+007.094 Send DATA 23 8,ID 20023
+007.354 Send DATA 24 8,ID 20024
+007.844 ******** ACK 128 timeout *********
+007.844 Send ACK 8
+008.378 ******** ACK 128 timeout *********
+008.378 Send ACK 8
+008.912 ******** ACK 128 timeout *********
+008.912 Send ACK 8
+008.978 ******** DATA 9 timeout **********
+008.978 Send DATA 9 8,ID 20009
+009.247 ******** DATA 10 timeout **********
+009.247 Send DATA 10 8,ID 20010
+009.509 ******** DATA 11 timeout **********
+009.509 Send DATA 11 8,ID 20011
+009.755 ******** DATA 12 timeout **********
+009.755 Send DATA 12 8,ID 20012
+010.010 ******** DATA 13 timeout **********
+010.010 Send DATA 13 8,ID 20013
+010.282 ******** DATA 14 timeout **********
+010.282 Send DATA 14 8,ID 20014
+010.557 ******** DATA 15 timeout **********
+010.557 Send DATA 15 8,ID 20015
+010.813 ******** DATA 0 timeout **********
+010.813 Send DATA 16 8,ID 20016
+011.080 ******** DATA 1 timeout **********
+011.080 Send DATA 17 8,ID 20017
+011.347 ******** DATA 2 timeout **********
+011.347 Send DATA 18 8,ID 20018
+011.602 ******** DATA 3 timeout **********
+011.603 Send DATA 19 8,ID 20019
+011.789 Impose noise on received data, 1/80600=1.2E-05
+011.872 ******** DATA 4 timeout **********
+011.872 Send DATA 20 8,ID 20020
+012.132 ******** DATA 5 timeout **********
+012.132 Send DATA 21 8,ID 20021
+012.413 ******** DATA 6 timeout **********
+012.413 Send DATA 22 8,ID 20022
+012.674 ******** DATA 7 timeout **********
+012.674 Send DATA 23 8,ID 20023
+012.941 ******** DATA 8 timeout **********
+012.941 Send DATA 24 8,ID 20024
+013.380 ******** ACK 128 timeout *********
+013.380 Send ACK 8
+013.898 ******** ACK 128 timeout *********
+013.898 Send ACK 8
+014.481 ******** DATA 9 timeout **********
+014.481 Send DATA 9 8,ID 20009
+014.750 ******** DATA 10 timeout **********
+014.750 Send DATA 10 8,ID 20010
+015.020 ******** DATA 11 timeout **********
+015.020 Send DATA 11 8,ID 20011
+015.290 ******** DATA 12 timeout **********
+015.290 Send DATA 12 8,ID 20012
+015.573 ******** DATA 13 timeout **********
+015.573 Send DATA 13 8,ID 20013
+015.823 ******** DATA 14 timeout **********
+015.823 Send DATA 14 8,ID 20014
+016.082 ******** DATA 15 timeout **********
+016.082 Send DATA 15 8,ID 20015
+016.345 ******** DATA 0 timeout **********
+016.345 Send DATA 16 8,ID 20016
+016.614 ******** DATA 1 timeout **********
+016.614 Send DATA 17 8,ID 20017
+016.864 ******** DATA 2 timeout **********
+016.864 Send DATA 18 8,ID 20018
+017.137 ******** DATA 3 timeout **********
+017.137 Send DATA 19 8,ID 20019
+017.398 ******** DATA 4 timeout **********
+017.398 Send DATA 20 8,ID 20020
+017.432 Impose noise on received data, 2/119608=1.7E-05
+017.666 ******** DATA 5 timeout **********
+017.666 Send DATA 21 8,ID 20021
+017.807 **** Receiver Error, Bad CRC ******
+017.909 ******** DATA 6 timeout **********
+017.909 Send DATA 22 8,ID 20022
+018.176 ******** DATA 7 timeout **********
+018.176 Send DATA 23 8,ID 20023
+018.450 ******** DATA 8 timeout **********
+018.450 Send DATA 24 8,ID 20024
+018.890 ******** ACK 128 timeout *********
+018.890 Send ACK 8
+019.817 ******** ACK 128 timeout *********
+019.817 Send ACK 8
+019.983 ******** DATA 9 timeout **********
+019.983 Send DATA 9 8,ID 20009
+020.242 ******** DATA 10 timeout **********
+020.242 Send DATA 10 8,ID 20010
+020.516 ******** DATA 11 timeout **********
+020.516 Send DATA 11 8,ID 20011
+020.785 ******** DATA 12 timeout **********
+020.785 Send DATA 12 8,ID 20012
+021.071 ******** DATA 13 timeout **********
+021.071 Send DATA 13 8,ID 20013
+021.352 ******** DATA 14 timeout **********
+021.352 Send DATA 14 8,ID 20014
+021.619 ******** DATA 15 timeout **********
+021.619 Send DATA 15 8,ID 20015
+021.887 ******** DATA 0 timeout **********
+021.887 Send DATA 16 8,ID 20016
+022.144 ******** DATA 1 timeout **********
+022.144 Send DATA 17 8,ID 20017
+022.422 ******** DATA 2 timeout **********
+022.422 Send DATA 18 8,ID 20018
+022.682 ******** DATA 3 timeout **********
+022.682 Send DATA 19 8,ID 20019
+022.950 ******** DATA 4 timeout **********
+022.950 Send DATA 20 8,ID 20020
+023.210 ******** DATA 5 timeout **********
+023.210 Send DATA 21 8,ID 20021
+023.495 ******** DATA 6 timeout **********
+023.495 Send DATA 22 8,ID 20022
+023.746 ******** DATA 7 timeout **********
+023.747 Send DATA 23 8,ID 20023
+024.006 ******** DATA 8 timeout **********
+024.006 Send DATA 24 8,ID 20024
+024.854 ******** ACK 128 timeout *********
+024.854 Send ACK 8
+025.305 TCP disconnected.

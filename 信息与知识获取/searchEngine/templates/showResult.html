@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>doc.title</title>
+    <meta charset="ISO-8859-1">
+    <style>
+        .result {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .pagination {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body style="font-family:PingFang SC;">
+    <div name="lefttop">
+        <form class="leftTopPart" method="get" action="/search">
+            <img src="/static/cnn1.png" style="width: 100px;vertical-align: middle;">
+            <input type="text" name="keyText" style="width: 400px;height: 30px;" value="{{ keyword }}">
+            <input type="image" src="/static/search.png" alt="Submit" style="width:33px;height:33px;vertical-align:middle;">
+            <p style="margin-left:100px;">选择查询类型<span>
+            <select name="order" style="margin-left: 100px;">
+                {% if sortKind == '0' %}
+                <option value="0" selected="selected">VSM</option>
+                {% else %}
+                <option value="0">VSM</option>
+                {% endif %}
+                {% if sortKind == '1' %}
+                <option value="1" selected="selected">BM25</option>
+                {% else %}
+                <option value="1">BM25</option>
+                {% endif %}
+                {% if sortKind == '4' %}
+                <option value="4" selected="selected">短语查询</option>
+                {% else %}
+                <option value="4">短语查询</option>
+                {% endif %}
+            </select></span>
+            </p>
+        </form>
+        <p style="margin-left: 100px;"><b style="color:orange"> {{ keyDoc|length }}</b> results in total </p>
+    </div>
+    {% load pagination_tags %}
+    {% autopaginate keyDoc 5 %}
+    {% if sortKind == '2' %}
+    {% for doc,id in keyDoc %}
+    <div class="result">
+                <div>
+                <h3>{{forloop.counter}}. <a href="/search/DOC/{{ id }}" >{{ doc.Headline }}</a> </h3>
+                </div>
+                <div class="info">
+                    <strong>
+                        <span> Time: {{ doc.FirstPublishDate }}</span>
+                    </strong>
+                </div>
+                <p > {{ doc.MappedSection }}</p>
+    </div>
+    {% endfor %}
+        {% elif sortKind == '4' %}
+        {% for doc,id in keyDoc %}
+            <div class="result">
+                <div>
+{#                目前测验，无法在a标签内动态设置颜色？，直接加静态好像可以#}
+                <h3 id="docTitle">{{forloop.counter}}. <a href="/search/DOC/{{ id }}?keyword={{ keyword }}">{{ doc.Headline }}</a> </h3>
+                    <br>
+                </div>
+                <div class="info">
+                    <strong>
+                        <span> Time: {{ doc.FirstPublishDate }}</span>
+                        <br/>
+                    </strong>
+                </div>
+                <p id="article{{ id }}" style="font-size: 20px"> {{ doc.Article_Body }}</p>
+                <script>
+                        var titleHL=document.getElementById('article{{ id }}');
+                        //innerHTML才是string类型，否则是Object类型
+                        var titleValue=titleHL.innerHTML;
+                        var highword="{{ highWord }}";
+                        //split根据分隔符，将string分为列表
+                        highword=highword.split(" ");
+                        var step;
+                        for(step=0;step<highword.length;step++){
+                            if(highword[step]=="")
+                                continue;
+                            //split第二个参数代表，返回的列表只要前3个
+                            var titleSplit=titleValue.split(highword[step],3);
+                            var title0Split = titleSplit[0].split(".");
+                            if(titleSplit.length==1 || title0Split.length >= 10){//说明没有匹配的word或显示内容过多，则显示前面几句话
+                                titleSplit=titleValue.split(".",5);
+                                titleValue=titleSplit.join(".");
+                                continue;
+                            }
+                            //先将highword转为string类型
+                            var str=highword[step].toString();
+                            titleValue=titleSplit.join("<span style=\"color: red\">"+str+"</span>");
+                        }
+                        //赋值从而变为红色
+                        titleHL.innerHTML=titleValue;
+                    </script>
+    </div>
+        {% endfor %}
+    {% elif sortKind == '0' or sortKind == '1'%}
+    {% for doc,id,score in keyDoc %}
+    <div class="result">
+                <div>
+{#                目前测验，无法在a标签内动态设置颜色？，直接加静态好像可以#}
+                <h3 id="docTitle">{{forloop.counter}}. <a href="/search/DOC/{{ id }}?keyword={{ keyword }}">{{ doc.Headline }}</a> </h3>
+                    <br>
+                </div>
+                <div class="info">
+                    <strong>
+                        <span> Time: {{ doc.FirstPublishDate }}</span>
+                        <br/>
+                        <span> Score: {{ score }}</span>
+                    </strong>
+                </div>
+                <p id="article{{ id }}" style="font-size: 20px"> {{ doc.Article_Body }}</p>
+                <script>
+                        var titleHL=document.getElementById('article{{ id }}');
+                        //innerHTML才是string类型，否则是Object类型
+                        var titleValue=titleHL.innerHTML;
+                        var highword="{{ highWord }}";
+                        //split根据分隔符，将string分为列表
+                        highword=highword.split(" ");
+                        var step;
+                        for(step=0;step<highword.length;step++){
+                            if(highword[step]=="")
+                                continue;
+                            //split第二个参数代表，返回的列表只要前3个
+                            var titleSplit=titleValue.split(highword[step],3);
+                            var title0Split = titleSplit[0].split(".");
+                            if(titleSplit.length==1 || title0Split.length >= 10){//说明没有匹配的word或显示内容过多，则显示前面几句话
+                                titleSplit=titleValue.split(".",5);
+                                titleValue=titleSplit.join(".");
+                                continue;
+                            }
+                            //先将highword转为string类型
+                            var str=highword[step].toString();
+                            titleValue=titleSplit.join("<span style=\"color: red\">"+str+"</span>");
+                        }
+                        //赋值从而变为红色
+                        titleHL.innerHTML=titleValue;
+                    </script>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% paginate %}
+    <span style="color: red"></span>
+</body>
+</html>

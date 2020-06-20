@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>{{ doc.doc_title }}</title>
+</head>
+<body style="font-family:PingFang SC;margin-left:100px;margin-right:100px;">
+        <div id="head" align="center">
+            <h1>{{ doc.Headline }}</h1>
+            <p>{{ doc.FirstPublishDate }}</p>
+        </div>
+        <div id="docContent">
+            <p>{{ doc.Article_Body }}</p>
+            <p><a href={{ doc.Url }}>文章源址</a></p>
+        </div>
+        <div id="suggestDOC">
+        </div>
+        <div align="center">
+        <form action="/search/DOC/{{ id }}?keyword={{ keyword }}" method="post" name="adjustbtn">
+                    <p>您认为这篇文章对您有用吗</p>
+                        <input type="submit" name="isUseful" value="有用">
+                        <input type="submit" name="isUseful" value="没有用">
+        </form>
+            {% if show == "True" %}
+            <script>
+                alert("提交成功")
+            </script>
+            {% endif %}
+    </div>
+</body>
+</html>

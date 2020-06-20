@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine</title>
+    <style>
+        .design {
+            background-image: url("static/firstPage.png");
+            background-size: 100% 600px;
+            background-repeat: no-repeat;
+        }
+        .fontstyle {
+            font-family:"PingFang SC";
+            color: #666666;
+        }
+        #btn {
+            width:40px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="img search">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+        </div>
+        <!--<div class="row">
+            <div class="column" align="center">
+                <img class="ui image" src="static/firstPage.png" alt="" style="width: 100%;height: 600px">
+            </div>
+        </div>-->
+        <div class="row design fontstyle" align = "center" style = "height:600px">
+            <img src="/static/cnn.png" style = "width:320px;">
+            <form id="searchPart" style="width: 100%" method="get" action="/search",name="search">
+                <input type="text" id="keyText" name="keyText" placeholder="请输入要搜索的内容"  style="width:420px;height:30px;vertical-align:middle;">
+                <input type="image" src="/static/search.png" alt="Submit" id="btn" style="width:35px;height:35px;vertical-align:middle;">
+                <br>
+                <br>
+                <p>选择搜索类型：</p>
+                    <input type="radio" name="order" id="r1" value="0" checked="true"/> <label for="r1">VSM算法</label>
+                    <input type="radio" name="order" id="r2" value="1" /> <label for="r2">BM25</label>
+{#                    <input type="radio" name="order" id="r3" value="2" /> <label for="r3">短语查询</label>#}
+{#                <input type="radio" name="order" id="r3" value="3" /> <label for="r3">模糊查询</label>#}
+                <input type="radio" name="order" id="r3" value="4" /> <label for="r3">短语查询</label>
+                <script>
+                    var form=document.getElementById('searchPart');
+                    form.addEventListener("submit",function (event) {
+                        var txt=document.getElementById('keyText').value;
+                        if(txt=="") {
+                                alert('搜索内容不能为空');
+                                event.preventDefault();
+                        }
+                    })
+                </script>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

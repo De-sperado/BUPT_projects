@@ -1,0 +1,6 @@
+car,4821,up
+car,6752,up
+coronavirus,224,up
+pandemic,224,up
+coronavirus,224,up
+pandemic,224,up
